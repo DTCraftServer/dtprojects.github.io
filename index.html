@@ -2,63 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DTProjects</title>
     <style>
-        body{
-            background-color: #f4f4f4;
+        body {
+            margin: 0px;
+            padding: 0px;
         }
-        .title {
-            border: 1px solid white;
-            border-radius: 10px;
-            background-color: white;
-            color: black;
-            text-align: center;
-            padding: 15px;
-            font-family: Calibri;
+        .image {
+            width: 100%;
+            min-height: 200px;
+            background: transparent;
         }
-        .text {
-            border: 1px solid white;
-            border-radius: 10px;
-            background-color: white;
-            color: black;
-            text-align: center;
-            padding: 10px;
-            font-family: Calibri;
-        }
-        .text_title {
-            border: 1px solid white;
-            border-radius: 10px;
-            background-color: white;
-            color: black;
-            text-align: center;
-            padding: 10px;
-            font-family: Calibri;
-        }
-        a {
-            font-size: 20px;
-            color: blueviolet;
-            text-decoration: none;
-        }
-        #maps {
+        nav {
+            font-family: sans-serif;
+            margin: 25px;
+            margin-top: 35px;
             text-align: left;
-            font-size: 20px;
         }
-        #a_maps {
-            color: black;
+        #button {
+            text-decoration: none;
+            width: 150px; height: 50px;
+            font-family: arial;
+            text-transform: uppercase;
+            color: #ee3769;
+            position: absolute;
+            left: 50%; right: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            border: 1px solid #ee3769;
+            text-align: center;
+            line-height: 50px;
+            overflow: hidden;
+            transition: color 0.3s ease-out;
+        }
+        #button::before {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            margin: auto;
+            content: "";
+            border-radius: 50%;
+            display: block;
+            width: 300px; height: 300px;
+            left: -75px;
+            transition: box-shadow 0.6s ease-out;
+            z-index: -1;
+        }
+        #button:hover {
+            color: #fff;
+        }
+        #button:hover::before {
+            box-shadow: inset 0 0 0 160px #ee3769;
+        }
+        .logo {
+            text-transform: uppercase;
+            font-family: arial;
+            text-align: center;
+            margin: 25px;
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            animation: logo 3s 1;
+        }
+         #buttonbl {
+            text-decoration: none;
+            width: 150px; height: 50px;
+            font-family: arial;
+            text-transform: uppercase;
+            color: #d66181;
+            position: absolute;
+            left: 50%; right: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            border: 1px solid #ee3769;
+            text-align: center;
+            line-height: 50px;
+            overflow: hidden;
+            transition: color 0.3s ease-out;
+        }
+        @keyframes logo {
+            0% {
+                color: white;
+                letter-spacing: 18px;
+                transform: scale(1.5) move(5px);
+            }
+            100% {
+                color: black;
+                letter-spacing: 8px;
+            }
         }
     </style>
 </head>
 <body>
-    <h2 class="title">DTProjects</h2>
-    <div class="text"><h3 class="text_title">DTCraft</h3>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam eaque, earum, illo perspiciatis similique optio inventore magni obcaecati minima corrupti a laboriosam, molestias voluptatum, maxime odio iste enim! Quaerat!
-    <br/> <br/> <a href="https://dtcraft.cf/">Зайти на сайт</a> <br/> <h3 class="text_title">SquidL</h3>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ratione molestias beatae modi at minus nisi fugiat ut necessitatibus commodi consequuntur dolores tempora temporibus maiores dolorum atque, reprehenderit ad cupiditate. <br/><br/> <a href="sqd.html">Скачать</a> <br/> 
-    <h3 class="text_title">DTShaders</h3>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis laudantium, optio suscipit ut id ducimus! Saepe, iure consectetur excepturi doloribus qui porro harum, quasi. Quidem error iste fugit architecto libero. <br/><br/> <a href="dts.html">Скачать</a><br/><h3 class="text_title">Карты</h3><br/>
-    <ul>
-        <li id="maps"><a href="kka.html" id="a_maps">Kka</a></li>
-    </ul>
-    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+<!--    <div align="center"><img src="logo.png"></div>-->
+   <div class="logo">DTProjects</div>
+    <br/>
+    <div class="image" data-parallax="scroll" data-image-src="dtc.png"></div>
+    <nav>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla numquam natus animi non ipsam ex harum, enim pariatur velit, laboriosam perferendis? Illum explicabo dolores expedita. Tempora dicta, incidunt recusandae obcaecati modi corporis, eligendi nihil ratione magni maiores laudantium? Vitae repellat veniam similique minima totam optio reiciendis, itaque ea nesciunt, iste sed quisquam voluptate necessitatibus eaque explicabo repellendus, blanditiis, dignissimos sit dolores enim voluptatem molestias. Quia, numquam, obcaecati assumenda quis qui deleniti officia provident quisquam magnam dolores saepe illo, eaque magni voluptatibus temporibus sapiente porro sint velit nostrum ratione ad blanditiis sed. Qui, sint perspiciatis. Dignissimos laborum repudiandae debitis magnam aut esse nisi ab tenetur similique. Obcaecati porro quod alias at, sapiente blanditiis ullam. Possimus perspiciatis ratione doloremque repellat, saepe odio, odit, necessitatibus atque deserunt a alias. Tenetur quis et, ex ullam quod est minus minima perspiciatis beatae reprehenderit natus non doloremque, nulla neque nisi sunt, libero. Inventore ullam, nam maiores!</nav>
+    <br/>
+    <a href="https://dtcraft.cf/"><div id="button">зайти</div></a>
+    <br/><br/>
+    <div class="image" data-parallax="scroll" data-image-src="squidl.jpg"></div>
+    <nav>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla numquam natus animi non ipsam ex harum, enim pariatur velit, laboriosam perferendis? Illum explicabo dolores expedita. Tempora dicta, incidunt recusandae obcaecati modi corporis, eligendi nihil ratione magni maiores laudantium? Vitae repellat veniam similique minima totam optio reiciendis, itaque ea nesciunt, iste sed quisquam voluptate necessitatibus eaque explicabo repellendus, blanditiis, dignissimos sit dolores enim voluptatem molestias. Quia, numquam, obcaecati assumenda quis qui deleniti officia provident quisquam magnam dolores saepe illo, eaque magni voluptatibus temporibus sapiente porro sint velit nostrum ratione ad blanditiis sed. Qui, sint perspiciatis. Dignissimos laborum repudiandae debitis magnam aut esse nisi ab tenetur similique. Obcaecati porro quod alias at, sapiente blanditiis ullam. Possimus perspiciatis ratione doloremque repellat, saepe odio, odit, necessitatibus atque deserunt a alias. Tenetur quis et, ex ullam quod est minus minima perspiciatis beatae reprehenderit natus non doloremque, nulla neque nisi sunt, libero. Inventore ullam, nam maiores!</nav>
+    <br/>
+    <div id="buttonbl">скоро...</div>
+    <br/> <br/>
+    <br/>
+    <div class="image" data-parallax="scroll" data-image-src="dts.png"></div>
+    <nav>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla numquam natus animi non ipsam ex harum, enim pariatur velit, laboriosam perferendis? Illum explicabo dolores expedita. Tempora dicta, incidunt recusandae obcaecati modi corporis, eligendi nihil ratione magni maiores laudantium? Vitae repellat veniam similique minima totam optio reiciendis, itaque ea nesciunt, iste sed quisquam voluptate necessitatibus eaque explicabo repellendus, blanditiis, dignissimos sit dolores enim voluptatem molestias. Quia, numquam, obcaecati assumenda quis qui deleniti officia provident quisquam magnam dolores saepe illo, eaque magni voluptatibus temporibus sapiente porro sint velit nostrum ratione ad blanditiis sed. Qui, sint perspiciatis. Dignissimos laborum repudiandae debitis magnam aut esse nisi ab tenetur similique. Obcaecati porro quod alias at, sapiente blanditiis ullam. Possimus perspiciatis ratione doloremque repellat, saepe odio, odit, necessitatibus atque deserunt a alias. Tenetur quis et, ex ullam quod est minus minima perspiciatis beatae reprehenderit natus non doloremque, nulla neque nisi sunt, libero. Inventore ullam, nam maiores!</nav>
+    <br/>
+    <div id="buttonbl">скоро...</div>
+    <br/><br/>
+    <br/>
+    <div class="image" data-parallax="scroll" data-image-src="maps.png"></div>
+    <nav>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla numquam natus animi non ipsam ex harum, enim pariatur velit, laboriosam perferendis? Illum explicabo dolores expedita. Tempora dicta, incidunt recusandae obcaecati modi corporis, eligendi nihil ratione magni maiores laudantium? Vitae repellat veniam similique minima totam optio reiciendis, itaque ea nesciunt, iste sed quisquam voluptate necessitatibus eaque explicabo repellendus, blanditiis, dignissimos sit dolores enim voluptatem molestias. Quia, numquam, obcaecati assumenda quis qui deleniti officia provident quisquam magnam dolores saepe illo, eaque magni voluptatibus temporibus sapiente porro sint velit nostrum ratione ad blanditiis sed. Qui, sint perspiciatis. Dignissimos laborum repudiandae debitis magnam aut esse nisi ab tenetur similique. Obcaecati porro quod alias at, sapiente blanditiis ullam. Possimus perspiciatis ratione doloremque repellat, saepe odio, odit, necessitatibus atque deserunt a alias. Tenetur quis et, ex ullam quod est minus minima perspiciatis beatae reprehenderit natus non doloremque, nulla neque nisi sunt, libero. Inventore ullam, nam maiores!</nav>
+    <br/>
+    <a href="https://dtcraft.cf/dtprojects/maps"><div id="button">карты</div></a>
+    <br/><br/>
 </body>
 </html>

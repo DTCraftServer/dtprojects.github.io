@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DTP / Maps</title>
+    <style>
+        .logo {
+            text-transform: uppercase;
+            font-family: arial;
+            text-align: center;
+            margin: 25px;
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            animation: logo 3s 1;
+        }
+        .logo2 {
+            text-transform: uppercase;
+            font-family: arial;
+            text-align: center;
+            margin: 25px; margin-top: 15px;
+            font-size: 40px;
+            font-weight: 500;
+            letter-spacing: 6px;
+            animation: logo2 3s
+        }
+        .title {
+            text-transform: uppercase;
+            font-family: arial;
+            text-align: left;
+            margin-left: 15%;
+            font-weight: 300;
+            font-size: 30px;
+        }
+        .desc {
+            margin: 15px;
+            font-family: sans-serif;
+        }
+        #button {
+            text-decoration: none;
+            width: 150px; height: 50px;
+            font-family: arial;
+            text-transform: uppercase;
+            color: #ee3769;
+            position: absolute;
+            left: 50%; right: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            border: 1px solid #ee3769;
+            text-align: center;
+            line-height: 50px;
+            overflow: hidden;
+            transition: color 0.3s ease-out;
+        }
+        #button::before {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            margin: auto;
+            content: "";
+            border-radius: 50%;
+            display: block;
+            width: 300px; height: 300px;
+            left: -75px;
+            transition: box-shadow 0.6s ease-out;
+            z-index: -1;
+        }
+        #button:hover {
+            color: #fff;
+        }
+        #button:hover::before {
+            box-shadow: inset 0 0 0 160px #ee3769;
+        }
+        @keyframes logo {
+            0% {
+                color: white;
+                letter-spacing: 18px;
+                transform: scale(1.5) move(5px);
+            }
+            100% {
+                color: black;
+                letter-spacing: 8px;
+            }
+        }
+        @keyframes logo2 {
+            0% {
+                color: white;
+                letter-spacing: 18px;
+                transform: scale(1.5) move(5px);
+            }
+            50% {
+                color: white;
+                letter-spacing: 18px;
+                transform: scale(1.5) move(5px);
+            }
+            100% {
+                color: black;
+                letter-spacing: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">dtprojects</div>
+    <div class="logo2">maps</div>
+    <div class="title">kka</div>
+    <div class="desc">Kka - это карта для MCPE, цель которой заключается в выполнении всех пяти уровней. Всего на карте есть 5 уровней, таких как <strong>паркур, TNTRun, элитра, вопросы и speedrun.</strong> Если вы играете один, то это как раз та карта, на которой вам нужно играть, но если у вас компания друзей, то не беда, Kka подходит и для мультиплеера.</div> <br/> <br/>
+    <a href="http://0x10c-zone.ru/load/karty_dlja_minecraft_pe/karta_kka_dlja_minecraft_pe_1_2/12-1-0-14784"><div id="button">скачать</div></a>
+</body>
+</html>
